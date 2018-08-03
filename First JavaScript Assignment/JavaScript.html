@@ -5,12 +5,16 @@
 
 </head>
 <body>
+
 <h1 id="display"> </h1> 
+
+
 
 	<script>
 		var userInfo = prompt("Enter Name");
 
-		document.attr.name = userInfo;
+		document.getElementById("display").innerHTML = "Hello " + userInfo + "! How are you today?";
+
 
 	</script>
 
