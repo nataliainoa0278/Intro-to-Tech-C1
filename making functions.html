@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	
+</head>
+<body>
+	<h3 id="display"></h3>
+
+	<input id="box" type="text" placeholder="Enter Name">
+	<input type="button" value="Display Formatted Name" onclick="capName()">
+<p>
+	When button is clicked name should be display>
+
+		<Script>
+		function capName() {
+			var value = document.getElementById("box").value;
+			//value lowercase
+			var result = value[0].toUpperCase() + value.substr(1).toLowerCase();
+
+			document.getElementById("display").innerHTML = result; 
+		}
+	</Script>
+</body>
+</html>

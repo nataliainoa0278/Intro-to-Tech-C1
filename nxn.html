@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3 id= "sequence"> </h3>
+	<input id="entry" type="text">
+ <input type="button" value="Add to Array" onClick="addElement()"> 
+
+ <input type="button" value="Remove from Array" onclick="removeElement()">
+ <input type="button"  value="Next Number" onclick="showFib()">
+
+
+ 
+	<p>
+
+ 		//add the last two numbers in the sequence  to get the new number.
+ 		when button is clicked add the 
+
+ 	</p>
+
+ 	<script>
+ 		var fib = [0,1]
+
+ 		function showFib()
+ 		{
+
+ 			var next = fib[fib.length-1] + fib[fib.length-2];
+ 			fib.push(next);
+ 			document.getElementById("sequence").innerHTML += fib.join(',') + "<br>"; 
+
+ 		}
+
+ 	</script>
+
+
+ <script>
+ 	var pets = [];
+
+
+ 	function addElement(){
+ 			var value = document.getElementById("entry").value;
+
+ 		pets.push(value);
+
+
+ 		document.getElementById("view").innerHTML = pets.join(" | ") + " <br> The Total amount of pets I have is " + pets.length; 
+ 	}
+ </script>
+</body>
+</html>
