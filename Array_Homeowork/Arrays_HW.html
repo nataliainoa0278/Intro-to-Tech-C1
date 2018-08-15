@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!--* Adds prompt to array, connect to array
+* create array 
+* separate the elements by with --> 
+
+<body>
+
+<h3 id="display"> </h3>
+
+<input type="button" value="Add a Fruit" onclick="promptMe()">
+
+<script>
+	var fruits=["apple", "orange","kiwi"];
+	fruits.push("pineapple")
+
+	function promptMe() {
+
+		var fruitAdd= prompt("Enter fruit");
+		alert (fruitAdd)
+		document.getElementById("display").innerHTML = fruitAdd + ",  " + fruits;
+
+
+	}
+
+
+	</script>
+
+</body>
+</html>

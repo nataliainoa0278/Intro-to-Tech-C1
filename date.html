@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ 	<p> Today is </p>
+ 	<p id="day">"Today is"</p>
+
+
+ 	<script>
+ 		var dt = new Date().getDay();
+ 		
+ 		switch(dt) {
+
+ 			case 0:
+ 				document.getElementById("day").innerHTML ="Sunday";
+ 				break;
+ 			case 1:
+ 				document.getElementById("day").innerHTML="Monday";
+ 				break;
+ 			case 2:
+ 				 document.getElementaryById("day").innerHTML="Tuesday";
+ 				 break;
+ 			case 3:
+ 				 document.getELementaryById("day").innerHTML="Wednesday";
+ 				 break;
+ 			case 4:
+ 				 document.getElementById("day").innerHTML="Thursday";
+ 				 break;
+ 			case 5: 
+ 				 document.getElementaryById("day").innerHTML="Friday";
+ 				 break;
+ 			default:
+ 				document.getElementaryById("day").innerHTML="Saturday";
+ 				break;
+
+ 		}
+ 
+ </script>
+</body>
+</html>
