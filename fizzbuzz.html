@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3 id ="display"></h3>
+	<!--conditional saying 1 to 100
+		*make multiples of 3 conditional
+		*print "Fizz"
+		*Makes multiples of 5 
+		*print "Buzz"
+		*for both 3 and 5 print "FizzBuzz"-->
+
+
+	<script >
+		var count = 1; 
+			while (count <= 100) {
+				
+				if (count % 3 == 0)  {
+					document.getElementById("display").innerHTML += count + " Fizz<br>";
+			}else{
+
+				if (count % 5 == 0)
+					document.getElementById("display").innerHTML += count + " Buzz<br>";
+ 
+			}else if{
+
+					(count % 15 == 0) {
+					document.getElementById("display").innerHTML += count + " BuzzFizz<br>";
+				}
+			
+			count++;
+
+		}
+
+	</script>
+
+
+</body>
+</html>

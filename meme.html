@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid">
+
+		<div class="row">
+			<input type="text"
+			placeholder="Search">
+			</div>
+		<div class="col">
+			<input type="text" id="uploadURL" 
+			placeholder="Enter URL" onchange="uploadURL()">
+				<input id="tags" type="text" name=""placeholder="Enter Tags">
+				<nput id="URL" type="text" placeholder="Enter URL">
+
+					<input type="text" value="UPLOAD MEME" onclick="uploadMeme()">
+
+
+			</div>
+		</div>
+
+					<h1>Results</h1>
+					<div id="results" class="row"></div>
+				</div>
+				<script>
+					var memeBox = [];
+
+					function uploadMeme(){
+						var name = documentgetElementById('name').value;
+						var url = document.getElementById("uploadURL").value;
+						memeBox.push(url);
+						alert(url + "was uploaded!");
+
+						displayALLMemes();
+
+					}
+
+					function displayALLMemes() {
+						console.log('I am running', memeBox[i])
+						document.getElementById("results").innerHTML = '';
+						 for(var i = 0; i < memeBox.length; i++) {
+
+						 	console.log('loop is running')
+						 	document.getElementById("results").innerHTML += '<img scr="'+ memeBox[i] +'">';
+
+						 }
+					}
+					function search(){
+						document.getElementById("search").value;
+						for(var i = 0; i < memeBox.length; i++){
+							if(input == memeBox[i].name) {
+
+							}
+
+						}
+					}
+
+				</script>
+					
+				
+
+</body>
+</html>
